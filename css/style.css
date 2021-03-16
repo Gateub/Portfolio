@@ -1,0 +1,389 @@
+/*  import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+img {
+	
+	object-fit: cover;
+}
+
+:root{
+	--bg-black-900:#000000;
+	--bg-black-100:#dddddd;
+	--bg-black-50:#eff0f4;
+	--text-black-900:#000000;
+	--text-black-700:#555555;
+	--text-black-600:#666666;
+	--text-black-900:#bbbbbb;
+}
+/********************************************************** CUSTOME SCROLL BAR ****************************************************/
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/********************************************************** ALL SIMILAR CONTENT STYLONG CODES ****************************************************/
+section{
+    padding: 100px 0;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+.about, .services, .skills, .teams, .contact, footer{
+    font-family: 'Poppins', sans-serif;
+}
+.about .about-content, 
+.services .serv-content,
+.skills .skills-content,
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+section .title::after{
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    font-size: 20px;
+    color: #b30000;
+    padding: 0 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+/********************************************************** NAVBAR STYLING ****************************************************/
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+.navbar.sticky{
+    padding: 15px 0;
+    background: #b30000;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+.navbar .logo a span{
+    color: #b30000;
+    transition: all 0.3s ease;
+}
+.navbar.sticky .logo a span{
+    color: #fff;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: #b30000;
+}
+.navbar.sticky .menu li a:hover{
+    color: #fff;
+}
+
+/********************************************************** MENU BTN STYLING ****************************************************/
+.menu-btn{
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+.scroll-up-btn{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: #b30000;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    border-bottom-width: 2px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.scroll-up-btn.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+.scroll-up-btn:hover{
+    filter: brightness(90%);
+}
+
+
+.home{
+    display: flex;
+    background: url("../images/wallpaper/mha.jpeg") no-repeat center ;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+
+/********************************************************** PROJECTS SECTION STYLING ****************************************************/
+
+
+/********************************************************** TEAMS SECTION STYLING ****************************************************/
+
+/********************************************************** CONTACT SECTION STYLING ****************************************************/
+
+/********************************************************** PROJEt SECTION STYLING ****************************************************/
+
+
+/********************************************************** FOOTER SECTION STYLING ****************************************************/
+
+/****************************************************************/
+@keyframes text_reveal_box {
+	50% {
+		width: 100%;
+		left: 0;
+	}
+	100% {
+		width: 0;
+		left: 100%;
+	}
+}
+@keyframes text_reveal {
+	100% {
+		color: white;
+	}
+}
+@keyframes text_reveal_name {
+	100% {
+		color: #b30000;
+	}
+}
+@keyframes html{
+	0%{
+		width:0%;
+	}
+	100%{
+		width: 90%;
+	}
+}
+@keyframes css{
+	0%{
+		width:0%;
+	}
+	100%{
+		width: 60%;
+	}
+}
+@keyframes js{
+	0%{
+		width:0%;
+	}
+	100%{
+		width: 80%;
+	}
+}
+@keyframes php{
+	0%{
+		width:0%;
+	}
+	100%{
+		width: 50%;
+	}
+}
+@keyframes mysql{
+	0%{
+		width:0%;
+	}
+	100%{
+		width: 70%;
+	}
+}
+/********************************************************** RESPONSIVE MEDIA QUERY START ****************************************************/
+@media (max-width: 1300px) {
+    .home .max-width{
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 1104px) {
+    .about .about-content .left img{
+        height: 350px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 991px) {
+    .max-width{
+        padding: 0 50px;
+    }
+}
+@media (max-width: 947px){
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left: 0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    .home .home-content .text-2{
+        font-size: 70px;
+    }
+
+    .home .home-content a{
+        font-size: 23px;
+        padding: 10px 30px;
+    }
+    .max-width{
+        max-width: 930px;
+    }
+    .about .about-content .right{
+        width: 100%;
+    }
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content .right{
+        flex: 100%;
+    }
+    .services .serv-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+    .skills .skills-content .column,
+    .contact .contact-content .column{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+}
+
+@media (max-width: 690px) {
+    .max-width{
+        padding: 0 23px;
+    }
+    .home .home-content .text-2{
+        font-size: 60px;
+    }
+    .home .home-content a{
+        font-size: 20px;
+    }
+    
+    .services .serv-content .card{
+        width: calc(100%);
+    }
+}
+
+@media (max-width: 500px) {
+    .home .home-content .text-2,.home .home-content .text-1{
+        font-size: 50px;
+    }
+    .scroll-up-btn{
+        right: 40px;
+        bottom: 15px;
+        height: 38px;
+        width: 35px;
+        font-size: 23px;
+        line-height: 38px;
+    }
+    .skills .timeline:before, .skills .timeline2:before, .skills .timeline .timeline-item-inner:before, .skills .timeline2 .timeline-item-inner:before, .skills .timeline .timeline-item-inner .icon, .skills .timeline2 .timeline-item-inner .icon {
+        display:none;
+    }
+    .skills .timeline .timeline-item-inner, .skills .timeline2 .timeline-item-inner{
+        width:350%;
+    }
+    .about .about-content .right .text .typing-2:before{
+        content: ' ';
+    clear: right;
+    display: block;
+    }
+    
+}

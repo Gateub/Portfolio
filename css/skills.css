@@ -1,0 +1,343 @@
+/********************************************************** SKILLS SECTION STYLING ****************************************************/
+::selection{
+  color: #fff;
+  background: #6665ee;
+}
+.skill-bars{
+  padding: 25px 30px;
+  background: #fff;
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
+.skills .bar{
+  margin: 20px 0;
+}
+.skills .bar:first-child{
+  margin-top: 0px;
+}
+.skills .bar .info{
+  margin-bottom: 5px;
+}
+.skills .bar .info span{
+  font-weight: 500;
+  font-size: 17px;
+  opacity: 0;
+  animation: showText 0.5s 1s linear forwards;
+}
+@keyframes showText {
+  100%{
+    opacity: 1;
+  }
+}
+.skills .bar .progress-line{
+  height: 10px;
+  width: 100%;
+  background: #f0f0f0;
+  position: relative;
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: 10px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
+              0 1px rgba(255,255,255,0.8);
+  animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+@keyframes animate {
+  100%{
+    transform: scaleX(1);
+  }
+}
+.bar .progress-line span{
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+
+/*------------------------*/
+.bar .progress-line.c span{
+  width: 60%;
+  background: #6665ee;
+}
+.progress-line.c span::after{
+  content: "60%";
+}
+/*------------------------*/
+.bar .progress-line.cc span{
+  width: 55%;
+  background: #6665ee;
+}
+.progress-line.cc span::after{
+  content: "55%";
+}
+/*------------------------*/
+.bar .progress-line.java span{
+  width: 75%;
+  background: #65d5ee;
+}
+.progress-line.java span::after{
+  content: "75%";
+}
+/*------------------------*/
+.bar .progress-line.python span{
+  width: 85%;
+  background:#c0f27e; 
+}
+.progress-line.python span::after{
+  content: "85%";
+}
+/*------------------------*/
+.bar .progress-line.sql span{
+  width: 90%;
+  background:#65ee9e; 
+}
+.progress-line.sql span::after{
+  content: "90%";
+}
+/*------------------------*/
+.bar .progress-line.spark span{
+  width: 80%;
+  background:#95ee65; 
+}
+.progress-line.spark span::after{
+  content: "80%";
+}
+/*------------------------*/
+.bar .progress-line.filemaker span{
+  width: 90%;
+  background: #5cc423;
+}
+.progress-line.filemaker span::after{
+  content: "90%";
+}
+
+/*------------------------*/
+.bar .progress-line.html span, .bar .progress-line.css span{
+  width: 80%;
+  background:#eec065; 
+}
+.progress-line.html span::after, .progress-line.css span::after{
+  content: "80%";
+}
+/*------------------------*/
+.bar .progress-line.js span{
+  width: 65%;
+  background:#ee8a65; 
+}
+.progress-line.js span::after{
+  content: "65%";
+}
+/*------------------------*/
+.bar .progress-line.wordpress span{
+  width: 70%;
+  background: #ee6565; 
+}
+.progress-line.wordpress span::after{
+  content: "70%";
+}
+/*------------------------*/
+.bar .progress-line.dart span{
+  width: 80%;
+  background:#ee659e;
+}
+.progress-line.dart span::after{
+  content: "80%";
+}
+/*------------------------*/
+.bar .progress-line.figma span{
+  width: 90%;
+  background:#f0ade0;   
+}
+.progress-line.figma span::after{
+  content: "90%";
+}
+/*------------------------*/
+.bar .progress-line.office span{
+  width: 90%;
+  background: #953af0;
+}
+.progress-line.office span::after{
+  content: "90%";
+}
+/*------------------------*/
+.progress-line span::before{
+  position: absolute;
+  content: "";
+  top: -10px;
+  right: 0;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: #000;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+.progress-line span::after{
+  position: absolute;
+  top: -28px;
+  right: 0;
+  font-weight: 500;
+  background: #000;
+  color: #fff;
+  padding: 1px 8px;
+  font-size: 12px;
+  border-radius: 3px;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+@keyframes showText2 {
+  100%{
+    opacity: 1;
+  }
+}
+
+/****************************************************COMPETENCES/EXPERIENCE****************************************************/
+
+.skills .title::after{
+    content: "what i know";
+}
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+}
+
+.skills .tab-content{
+  display:none;
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+.skills .tab-content.active{
+  display: block;
+}
+
+.skills .about-tabs {
+  padding: 0 15px 50px;
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+
+}
+.skills .about-tabs .tab-item:hover, .skills .about-tabs .tab-item.active{
+  color: white;
+  background-color: #b30000;
+  box-shadow: 2px 2px 2px black;
+}
+.skills .about-tabs .tab-item{
+  display: inline-block;
+  margin: 0 5px 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  color: black;
+  font-weight: 500;
+  text-transform: capitalize;
+  box-shadow: 2px 2px 2px 1px var(--text-black-700);
+}
+
+.skills .timeline, .skills .timeline2{
+  flex:0 0 100%;
+  max-width:100%;
+  position: relative;
+}
+.skills .timeline:before, .skills .timeline2:before{
+  content:'';
+  width:1px;
+  height: 100%;
+  left: 50%;
+  top:0;
+  background-color: var(--bg-black-100);
+  position: absolute;
+}
+.skills .timeline .timeline-item, .skills .timeline2 .timeline-item{
+  flex:0 0 100%;
+  max-width:150%;
+  padding: 0 15px;
+  
+}
+
+.skills .timeline .timeline-item-inner, .skills .timeline2 .timeline-item-inner{
+  padding: 30px;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 2px 2px 2px 1px var(--text-black-700);
+}
+.skills .timeline .timeline-item-inner:before, .skills .timeline2 .timeline-item-inner:before{
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: #b30000;
+  top: 37px;
+  z-index:-1;
+}
+  
+.skills .timeline .timeline-item-inner .icon, .skills .timeline2 .timeline-item-inner .icon{
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+  position: absolute;
+  top:18px;
+  border:1px solid var(--bg-black-100);
+  border-radius:50%;
+  background-color: white;
+  color: #b30000;
+  font-size:16px;
+}
+
+.skills .timeline .timeline-item-inner span, .skills .timeline2 .timeline-item-inner span{
+  font-weight: 500;
+  color: #b30000;
+  display: block;
+  margin: 0 0 10px;
+  text-transform: capitalize;
+}
+.skills .timeline .timeline-item-inner h3, .skills .timeline2 .timeline-item-inner h3{
+  font-size: 20px;
+  color: var(--text-black-100);
+  font-weight: 600;
+  margin: 0 0 5px;
+  text-transform: capitalize;
+}
+.skills .timeline .timeline-item-inner h4, .skills .timeline2 .timeline-item-inner h4{
+  font-size: 16px;
+  color: var(--text-black-600);
+  font-style: italic;
+  margin: 0;
+}
+.skills .timeline .timeline-item-inner li, .skills .timeline2 .timeline-item-inner li{
+  font-size: 16px;
+  color: var(--text-black-600);
+  line-height: 26px;
+  margin: 15px 0 0;
+}
+
+.skills .timeline .timeline-item:nth-child(odd), .skills .timeline2 .timeline-item:nth-child(even){
+  padding-right: calc(50% + 50px);
+  text-align: right;
+}
+.skills .timeline .timeline-item:nth-child(even), .skills .timeline2 .timeline-item:nth-child(odd){
+  padding-left: calc(50% + 50px);
+}
+.skills .timeline .timeline-item:nth-child(odd) .timeline-item-inner:before, .skills .timeline2 .timeline-item:nth-child(even) .timeline-item-inner:before{
+  right: -30px;
+}
+.skills .timeline .timeline-item:nth-child(even) .timeline-item-inner:before, .skills .timeline2 .timeline-item:nth-child(odd) .timeline-item-inner:before{
+  left: -30px;
+} 
+.skills .timeline .timeline-item:nth-child(odd) .icon, .skills .timeline2 .timeline-item:nth-child(even) .icon{
+  right: -73px;
+}
+.skills .timeline .timeline-item:nth-child(even) .icon, .skills .timeline2 .timeline-item:nth-child(odd) .icon{
+  left: -73px;
+}

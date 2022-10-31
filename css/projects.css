@@ -1,8 +1,8 @@
 #section4 .title::after{
-    content: "what i know";
+    content: "what i do";
 }
 .tabs {
-    list-style: none;
+   list-style: none;
    display: flex;
    flex-flow: row wrap;
    justify-content: flex-start;
@@ -17,8 +17,8 @@
 }
 .tabs label {
     display: inline-block;
-    min-width: 25%;
-   flex: 1 1 25%;
+    min-width: 15%;
+   flex: 1 1 15%;
     color: #ccc;
     text-align: center;
     cursor: pointer;

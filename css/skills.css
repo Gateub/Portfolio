@@ -57,20 +57,20 @@
 
 
 /*------------------------*/
-.bar .progress-line.c span{
-  width: 55%;
+.bar .progress-line.finance span{
+  width: 75%;
   background: #6665ee;
 }
-.progress-line.c span::after{
-  content: "55%";
+.progress-line.finance span::after{
+  content: "75%";
 }
 /*------------------------*/
-.bar .progress-line.cc span{
-  width: 55%;
+.bar .progress-line.viz span{
+  width: 85%;
   background: #6665ee;
 }
-.progress-line.cc span::after{
-  content: "55%";
+.progress-line.viz span::after{
+  content: "85%";
 }
 /*------------------------*/
 .bar .progress-line.java span{
@@ -96,29 +96,20 @@
 .progress-line.sql span::after{
   content: "85%";
 }
-/*------------------------*/
-.bar .progress-line.spark span{
-  width: 80%;
-  background:#95ee65; 
-}
-.progress-line.spark span::after{
-  content: "80%";
-}
-/*------------------------*/
-.bar .progress-line.filemaker span{
+.bar .progress-line.gtm span{
   width: 85%;
   background: #5cc423;
 }
-.progress-line.filemaker span::after{
+.progress-line.gtm span::after{
   content: "85%";
 }
 
 /*------------------------*/
-.bar .progress-line.html span, .bar .progress-line.css span{
+.bar .progress-line.html span{
   width: 80%;
   background:#eec065; 
 }
-.progress-line.html span::after, .progress-line.css span::after{
+.progress-line.html span::after{
   content: "80%";
 }
 /*------------------------*/
@@ -131,19 +122,19 @@
 }
 /*------------------------*/
 .bar .progress-line.wordpress span{
-  width: 70%;
+  width: 85%;
   background: #ee6565; 
 }
 .progress-line.wordpress span::after{
-  content: "70%";
+  content: "85%";
 }
 /*------------------------*/
 .bar .progress-line.dart span{
-  width: 80%;
+  width: 75%;
   background:#ee659e;
 }
 .progress-line.dart span::after{
-  content: "80%";
+  content: "75%";
 }
 /*------------------------*/
 .bar .progress-line.figma span{
@@ -154,11 +145,11 @@
   content: "90%";
 }
 /*------------------------*/
-.bar .progress-line.office span{
+.bar .progress-line.office span, .bar .progress-line.manage span{
   width: 90%;
   background: #953af0;
 }
-.progress-line.office span::after{
+.progress-line.office span::after, .progress-line.manage span::after{
   content: "90%";
 }
 /*------------------------*/

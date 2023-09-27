@@ -33,13 +33,7 @@ $(document).ready(function(){
         $('.menu-btn i').toggleClass("active");
     });
 
-    var typed = new Typed(".typing", {
-        strings: ["a Student", "Passionated", "Sociable", "Cheerful", "a Developper", "Invested", "an Analyst", "Curious", "Perfectionist"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-    });
-        var typed2 = new Typed(".typing-2", {
+    var typed = new Typed(".typing-2", {
         strings: ["a Student", "Passionated", "Sociable", "Cheerful", "a Developper", "Invested", "an Analyst", "Curious", "Perfectionist"],
         typeSpeed: 100,
         backSpeed: 60,
